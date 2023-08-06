@@ -20,7 +20,7 @@ public class ImageOpMode extends LinearOpMode {
 
         while (opModeIsActive()) {
             TelemetryPacket packet = new TelemetryPacket();
-            packet.fieldOverlay().drawImage("/images/ftc.jpg", 0, 0, 144, 144);
+            packet.fieldOverlay().drawImage("/images/rick.gif", 0, 0, 144, 144);
             //packet.fieldOverlay().drawImage("/dash/powerplay.png", 0, 0, 144, 144);
             dashboard.sendTelemetryPacket(packet);
             sleep(20);

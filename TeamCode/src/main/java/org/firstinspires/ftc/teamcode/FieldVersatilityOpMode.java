@@ -105,7 +105,7 @@ public class FieldVersatilityOpMode extends LinearOpMode {
                 //but extra parameters are available to allow rotation and drawing in the current transform
                 //all other drawing primitives are rendered in the current (or default) transform, as built using setTranslation, setRotation and setScale
                 .setAlpha(.25)
-                .drawImage(ALTIMGSRC, ALTIMGX, ALTIMGY, ALTIMGW, ALTIMGH)
+//                .drawImage(ALTIMGSRC, ALTIMGX, ALTIMGY, ALTIMGW, ALTIMGH)
 
                 //optionally add custom gridlines, minimum of 2 to render field edges, anything less suppresses gridlines in that direction, default is 7
                 .setAlpha(1.0)

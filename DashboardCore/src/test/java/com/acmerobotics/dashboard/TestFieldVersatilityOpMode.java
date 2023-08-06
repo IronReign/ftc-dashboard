@@ -130,7 +130,7 @@ public class TestFieldVersatilityOpMode extends TestOpMode {
             //.drawGrid(GRIDX, GRIDY, GRIDW, GRIDH, GRID_LINESX, GRID_LINESY, angleAnim, GRID_PIVOTX, GRID_PIVOTY, GRID_USE_PAGE_FRAME)
 
             //you can draw multiple images and can rotate them around a specified anchor/pivot point and draw them in the current transform instead of the page frame
-            .drawImage("/dash/ftc.jpg", 24, 24, 48, 48, 0, 0, 0, false)
+            .drawImage("images/rick.gif", 24, 24, 48, 48, 0, 0, 0, false)
 
             //demonstrate an alternate transform to move the origin and orientation
             //default origin for dashboard is in the center of the field with X axis pointing up
