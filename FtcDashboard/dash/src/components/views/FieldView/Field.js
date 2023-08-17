@@ -244,7 +244,7 @@ export default class Field {
             {
             this.ctx.translate(op.x, -op.y);
             }
-          this.ctx.rotate(op.theta, op.pivotX, op.pivotY);
+          this.ctx.rotate(op.theta);
           this.ctx.drawImage(image, -op.pivotX, -op.pivotY, op.width, op.height);
           this.ctx.restore();
           break;
@@ -275,13 +275,13 @@ export default class Field {
             if (op.usePageFrame)
               {
                 this.ctx.setTransform(pageTransform);
-                this.ctx.translate(op.x + op.pivotX , op.y + op.pivotY);
+                this.ctx.translate(op.x, op.y);
               }
             else //use current transform
               {
               this.ctx.translate(op.x, -op.y);
               }
-            this.ctx.rotate(op.theta, op.pivotX, op.pivotY);
+            this.ctx.rotate(op.theta);
           this.ctx.strokeStyle = this.options.gridLineColor;
 
           const horSpacing = op.width / (op.numTicksX - 1);
